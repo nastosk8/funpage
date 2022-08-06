@@ -1,0 +1,12 @@
+Priklad pre podmenku
+
+if (tvojvek >= 18) {
+     var planoletost = "Si plnolety"
+ } else {
+      var planoletost = "Nie si plnolety"
+  };
+  
+
+Priklad pre iny typ if
+
+variable = tvojvek >= 18 ? (variable = "Si plnolety") : (variable = "Nie si plnolety")
