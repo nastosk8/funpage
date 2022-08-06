@@ -1,3 +1,3 @@
 function BackroundChange(){
-    document.querySelector
+    document.querySelector.style
 }
