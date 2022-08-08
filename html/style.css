@@ -2,3 +2,17 @@ body {
         background-image: url("../images/backround1.png");
         background-color: #cccccc;
 }
+
+.BackroundChange {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+}
+
+.PohiblivyText p {
+        display: inline-block;
+        font-size: 320%;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        padding: 2px;
+}
+

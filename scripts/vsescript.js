@@ -15,5 +15,8 @@ if (BackroundTrigger == "1"){
 };
 
 
-
-
+function delay(i) {
+    setTimeout(() => {
+      console.log(i)
+    }, 1000);
+  }
