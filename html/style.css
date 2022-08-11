@@ -1,18 +1,110 @@
 body {
-        background-image: url("../images/backround1.png");
-        background-color: #cccccc;
+background-image: url("../images/backround1.png");
+background-color: #cccccc;
 }
 
-.BackroundChange {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
+.Header {
+display: inline;
+}
+
+.LeftMenuPanel {
+height: 100px;
+width: 500px;
+margin: 10px;
+}
+.LeftMenuPanel li {
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size: 150%;
+color: orangered;
+padding: 10px;
+border: 2px solid orangered;
+border-radius: 15px;
+width: fit-content;
+background-color: white;
+}
+.LeftMenuPanel ul {
+border: 3px solid gray ;
+background-color: gray;
+border-radius: 15px;
+width: 150px;
+}
+
+.LeftMenuShowBtn {
+font-size: 170%;
+text-decoration: none;
+color: orangered;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+border: 3px solid black;
+border-radius: 15px;
+padding: 5px;
+background-color: white;
+}
+
+.PohiblivyText {
+text-align: center;
+width: 91%;
+height: 100px;
+padding-left: 101px;
+position: static;
 }
 
 .PohiblivyText p {
-        display: inline-block;
-        font-size: 320%;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        padding: 2px;
+display: inline-block;
+font-size: 320%;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+padding: 5px;
+color: orangered;
+position: static;
 }
 
+.Footer {
+position: fixed;
+bottom: 0;
+left: 0;
+width: 2106px;
+border: 2px solid gray;
+border-width: 3px;
+background-color: gray;
+padding-left: 1%;
+}
+
+.Footer p {
+ display: inline;
+ font-size: 150%;
+ padding: 3%;
+ padding-left: 0%;
+}
+
+.ml1 {
+font-weight: 900;
+font-size: 3.5em;
+text-align: center;
+color: orangered;
+padding-top: 5%;
+}
+      
+.ml1 .letters {
+display: inline-block;
+line-height: 1em;
+}
+      
+.ml1 .text-wrapper {
+ position: relative;
+display: inline-block;
+padding-top: 0.1em;
+padding-right: 0.05em;
+padding-bottom: 0.15em;
+}
+      
+.ml1 .line {
+opacity: 0;
+position: absolute;
+left: 0;
+height: 3px;
+width: 100%;
+background-color: orangered;
+transform-origin: 0 0;
+}
+      
+.ml1 .line1 { top: 0; }
+.ml1 .line2 { bottom: 0; }
