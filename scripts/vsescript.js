@@ -17,7 +17,7 @@ setInterval( function (){
     if (currentIndex = totalCount){
         currentIndex = 0
     }
-}, 21000);
+}, 20001);
 
 // Wrap every letter in a span
 var textWrapper = document.querySelector('.ml1 .letters');

@@ -4,10 +4,11 @@ button[0].addEventListener('mousemove', ButtonSizeUp);
 button[0].addEventListener('mouseleave', ButtonSizeDown);
 button[0].addEventListener('click', ShowHideLeftMenu);
 var LeftMenuIndexVar = 1;
-var LeftMenuOptions = ['Pricing', 'About Us', 'Services', 'Reference'];
+var LeftMenuOptions = ['Pricing', 'About Us', 'Services', 'References', 'News','Carier', 'MiniGame'];
+var LeftMenuOptionsRef = ["/funpage/html/pricing.html",'/funpage/html/aboutus.html',"/funpage/html/services.html","/funpage/html/references.html","/funpage/html/news.html","/funpage/html/carier.html","/funpage/html/minigame.html"];
 var LeftMenuList = document.getElementById('LeftMenutext');
 console.log(LeftMenuList);
-
+console.log(LeftMenuOptions);
 function ButtonSizeUp(){
     button[0].style.fontSize = '220%';
 };
@@ -31,20 +32,29 @@ function ShowHideLeftMenu(){
 };
 
 function ShowLeftMenu(){
-    for (var i = 0; i < LeftMenuOptions.length - 1;i++){
+    console.log(LeftMenuOptions);
+    for (var i = 0; i < LeftMenuOptions.length;i++){
     var LeftMenuOptionsVar = document.createElement('li');
     LeftMenuOptionsVar.textContent = LeftMenuOptions[i];
     LeftMenuList.appendChild(LeftMenuOptionsVar);
-    
-    }
+    var LeftMenuOptionsRefVar = document.createElement('a');
+    LeftMenuOptionsRefVar.setAttribute('href', LeftMenuOptionsRef[i]);
+    LeftMenuOptionsVar.appendChild(LeftMenuOptionsRefVar);
+    console.log(LeftMenuOptionsVar.innerHTML);
+    console.log(LeftMenuOptionsRefVar.innerHTML);
+} 
 }
 
 function HideLeftMenu (){
-    for (var i = 0; i < LeftMenuOptions.length - 1;i++){
+    for (var i = 0; i < LeftMenuOptions.length;i++){
         var DeleteMenuList = document.getElementsByTagName('li');
         console.log(DeleteMenuList);
         LeftMenuList.removeChild(DeleteMenuList[0]);
         }
+}
+
+function LeftMenuToggle(){
+
 }
 /////// Konec Left Menu Panel ***** ///////
 ///////////////////////////////////////////
@@ -60,8 +70,6 @@ var PohiblivyTextPole = [
 ];
 
 var PohiblivyText = document.getElementsByClassName("PohiblivyText");
-console.log(PohiblivyText[0].innerHTML);
-console.log(PohiblivyText.length);
 var PohiblivyTextVar = 0;
 var PismenkaVar = 0;
 
@@ -86,10 +94,9 @@ function ZamenaTextov(){
             }, 800)
     PismenkaVar = 0;
 }else {
-    PohiblivyTextVar = 0
+    PohiblivyTextVar = 0;
     PismenkaVar = 0;
 }
 };
 /////// **** KONCI Zmena Text **** ///////////////
-
 
